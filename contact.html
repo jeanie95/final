@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+<header class = "primary-header">
+    <br>
+        <h1>Jiin Suh</h1>
+        
+        <nav class = "nav" id = "topnav">  
+            <ul>
+                <li ><a href = "index.html" >Portfolio</a></li>
+                <li ><a href = "resume.html">Resume</a></li>
+                <li ><a href = "about.html">About</a></li> 
+                <li ><a href = "contact.html" class="active">Contact</a></li>
+                
+            </ul>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="menu">
+                <i class="fa fa-bars"></i>
+              </a>
+        </nav>  
+       
+    </header>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("topnav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+        </script>
+
+<div class="contact" >
+    <img src = "images/profile.jpeg" alt = "Jiin's profile pic"/>
+    <h6>555 E.William St. Apt 5L Ann Arbor, MI 48104</h6>
+    <h6>734 263 8110</h6>
+    <h6>jiins@umich.edu</h6>
+    <br>
+    <a href="https://www.linkedin.com/in/jiinsuh/" aria-label = "linkedin"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+          
+</body>
+</html>
