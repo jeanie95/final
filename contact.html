@@ -17,7 +17,7 @@
 <header class = "primary-header">
     <br>
         <h1>Jiin Suh</h1>
-        
+        <a class="skip-main" href="#main">Skip to main content</a>
         <nav class = "nav" id = "topnav">  
             <ul>
                 <li ><a href = "index.html" >Portfolio</a></li>
@@ -44,7 +44,7 @@
         }
         </script>
 
-<div class="contact" >
+<div class="contact" id="main" tabindex="-1" >
     <img src = "images/profile.jpeg" alt = "Jiin's profile pic"/>
     <h6>555 E.William St. Apt 5L Ann Arbor, MI 48104</h6>
     <h6>734 263 8110</h6>
@@ -52,7 +52,24 @@
     <br>
     <a href="https://www.linkedin.com/in/jiinsuh/" aria-label = "linkedin"><i class="fab fa-linkedin"></i></a>
     </div>
+    <br>
+<div class="form">
+    <h2>If you have any question/comments, please feel free to contact via form below</h2>
 
-          
+    <form action="https://formspree.io/jiins@umich.edu" method="post" >
+        <fieldset>   
+        <label for="name">Name:</label>
+        <input type="text" name = "name"><br/>
+        <label for="email">Email: </label>
+        <input type="email" name = "e1" id = "e1"><br/>
+        <label for="message">Message: </label>
+    <input type="text" name="message" size="50"><br>
+</fieldset>
+    <input type="submit" value="Send">
+    
+    </form>
+</div>
+    </body>
+    </html>     
 </body>
 </html>

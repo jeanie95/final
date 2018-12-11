@@ -20,7 +20,7 @@
 <header class = "primary-header">
     <br>
 <h1>Jiin Suh</h1>
-
+<a class="skip-main" href="#main">Skip to main content</a>
 <nav class = "nav" id = "topnav">  
     <ul>
         <li ><a href = "index.html" >Portfolio</a></li>
@@ -45,12 +45,13 @@ function myFunction() {
     }
 }
 </script>
+<div class="about" >
 <br>
-<h6> The only thing that I am fearless is when it comes to traveling. I always found new environment a chance to explore and learn new culture.   I love being challenged where I have to adapt in order to gain meaningful experience. </h6>
-
-
+<h6> The only thing that I am fearless is when it comes to traveling.     </h6>
+<h6>I always found new environment a chance to explore and learn new culture.</h6>
+<h6>I love being challenged where I have to adapt in order to gain meaningful experience.</h6>
 <br>
-
+</div>
 <button type="button" data-filter="all">All</button>
 		<button type="button" data-filter=".japan">Osaka, Japan</button>
 		<button type="button" data-filter=".michigan">Ann Arbor, MI, US</button>
@@ -58,7 +59,8 @@ function myFunction() {
         <button type="button" data-filter=".chicago">Chicago, IL, US</button>
         <button type="button" data-filter=".newyork">NY, US</button>
 
-	<div class = "gallery container">
+	<div class = "gallery container" id="main" tabindex="-1">
+        
 		<a href="images/tmp.jpg" data-lightbox="image" data-title="Chicago" alt="chicago" class="mix chicago"><img src="images/tmp.jpg" ></a>
 		<a href="images/tmp 2.jpg" data-lightbox="image" data-title="Magnificient Mile" alt="chicago" class="mix chicago"><img src="images/tmp 2.jpg" ></a>
 		<a href="images/tmp 3.jpg" data-lightbox="image" data-title="Ann Arbor" alt="michigan" class="mix michigan"><img src="images/tmp 3.jpg" ></a>
