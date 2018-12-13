@@ -43,33 +43,51 @@
             }
         }
         </script>
-
-<div class="contact"  >
-    <img src = "images/profile.jpeg" alt = "Jiin's profile pic"/>
-    <h6>555 E.William St. Apt 5L Ann Arbor, MI 48104</h6>
-    <h6>734 263 8110</h6>
-    <h6>jiins@umich.edu</h6>
+<div role="main">
+<div class="contact">
+        <a href="https://www.linkedin.com/in/jiinsuh/" aria-label = "linkedin"><i class="fab fa-linkedin"></i></a>
+        <a href="https://dribbble.com/jeanie95" aria-label = "dribbble"><i class="fab fa-dribbble"></i></a>
+        <br>
+        <img src = "images/profile.jpeg" alt = "Jiin's profile pic"/>
+    <h2>555 E.William St. Apt 5L Ann Arbor, MI 48104</h2>
+    <h2>734 263 8110</h2>
+    <h2>jiins@umich.edu</h2>
     <br>
-    <a href="https://www.linkedin.com/in/jiinsuh/" aria-label = "linkedin"><i class="fab fa-linkedin"></i></a>
+    
     </div>
     <br>
 <div class="form" id="main" tabindex="-1">
-    <h2>If you have any question/comments, please feel free to contact via form below</h2>
+    <h5>If you have any question/comments, please feel free to contact via form below</h5>
 
-    <form action="https://formspree.io/jiins@umich.edu" method="post" >
+    <form action="https://formspree.io/jiins@umich.edu" method="post" onsubmit="return check()">
         <fieldset>   
         <label for="name" >Name:</label>
-        <input type="text" name = "name"><br/>
+        <input type="text" name = "name" id = "name"><br/>
+
         <label for="email">Email: </label>
-        <input type="email" name = "e1" id = "e1"><br/>
+        <input type="email" name = "email" id="email"><br/>
+
         <label for="message">Message: </label>
-    <input type="text" name="message" size="50"><br>
+    <input type="text" name="message"  id="message"><br>
 </fieldset>
     <input type="submit" value="Send">
-    
     </form>
+
+    <script>
+    function check(email) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
+}
+</script>
 </div>
-    </body>
-    </html>     
+</div>
+
+
 </body>
+
 </html>

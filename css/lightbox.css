@@ -6,11 +6,13 @@ html.lb-disable-scrolling {
   width: 100vw;
 }
 img{
-  height: 20vw;
+  height: 40vh;
+  
 }
+
 .container{
   display: grid;
-	grid-gap: 0.2rem;
+	grid-gap: 2px;
 	grid-template-columns: repeat(auto-fill, minmax(300px, auto));
   grid-auto-rows: minmax(20vh, auto);
 }
@@ -214,4 +216,28 @@ img{
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+
+button{
+  background:#40806A;
+  color: white;
+  border:none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+@media only screen and (max-width: 800px){
+  img{
+    height:30vh;
+  }
+  .container{
+grid-gap:20px;
+grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+}
+
+}
+@media only screen and (max-width:450px) {
+  img{
+    height: 50vh;
+  }
 }

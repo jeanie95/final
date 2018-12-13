@@ -19,16 +19,20 @@ nav,footer,header,section{
     margin-right: 5vw;
   }
 
-  h1, h2 {
+  h1{
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
-    color: #648880;
+    color: #40806A;
 
   }
-
+  h2{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  
   h3 {
     
-    color: #D4C492;
+    color: #555344;
     font-weight: 400;
     font-size: 22px;
   }
@@ -178,7 +182,7 @@ nav,footer,header,section{
     top:10vh;
     text-align: center;
     width:50vw;
-    
+    margin-bottom:5vh;
     background-image: url("../images/j.jpeg");
     background-position: 50% 50%;
     background-repeat: repeat;
@@ -186,10 +190,24 @@ nav,footer,header,section{
   }
   
   .form{
+    position: absolute;
     align-content: center;
-    margin-top: 10vh;
-    margin-left: 20vw;
+    
+    margin-left:20%;
+    margin-right:20%;
+    
   }
+  input[type=submit] {
+    margin-top:25px;
+      padding:5px 15px; 
+      background:#293f50;; 
+      border:1px solid lightgrey;
+      cursor:pointer;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; 
+      color:white;
+  }
+  
   
   .about{
    margin-top:10vh;
@@ -210,7 +228,17 @@ nav,footer,header,section{
     
   }
   
-
+  .jump{
+    position: absolute;
+    left:-1000px;
+  }
+  .jump:focus{
+    left:0;
+    top:0;
+    font-size:14px;
+    color:blue;
+  
+  }
  
   .nav {
       
@@ -251,13 +279,13 @@ nav,footer,header,section{
       margin-right: 0;
     }
     .nav .active{
-      color:#648880;
+      color:#40806A;
       font-weight: 700;
       font-size: 16px;
 
     }
     a {
-      color: #648880;
+      color: #40806A;
       text-decoration: none;
       
     }
@@ -273,11 +301,52 @@ nav,footer,header,section{
     }
     .primary-header a:hover,
     .primary-footer a:hover {
-      color: #648880;
+      color: #40806A;
     }
   
+    .primary-footer{
+      font-size: 12px;
+    }
     
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 800px){
+  .nav {
+    text-align: center;
+    font-size:12px;
+    position: relative;
+  }
+  .nav li {
+   display: inline-block;
+   margin: 0;
+   
+ }
+ .nav .active{
+   font-size: 14px;
+ 
+ }
+ .nav a{
+   float:left;
+   display:block;
+   text-align: right;
+   padding: 5px 5px;
+   margin: 0 10px 5px;
+ }
+ .form{
+   font-weight:300;
+   margin-top: 20px;
+ }
+
+ .portfolio{
+   background-color: #D4C492;
+ }
+.about, .form{
+  background-color: #D4C492;
+  
+}
+
+
+
+ }
+@media only screen and (max-width:450px) {
 .nav a {
   display:none;
 }
@@ -308,10 +377,6 @@ nav,footer,header,section{
     right: 10vw;
     
   }
-}
-
-
-@media only screen and (max-width: 600px){
   .about {
     background-color: #293f50;
     color: white;
@@ -332,17 +397,16 @@ nav,footer,header,section{
   .resume img{
     display:none;
   }
+.contact{
+  background-image: none;
+}
+  .form{
+
+    margin: 10px;
+  }
 }
 
-.jump{
-  position: absolute;
-  left:-1000px;
-}
-.jump:focus{
-  left:0;
-  top:0;
-  font-size:14px;
-  color:blue;
 
-}
+
+
           
